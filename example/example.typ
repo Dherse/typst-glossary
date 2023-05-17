@@ -13,7 +13,7 @@
     (key: "unamur", short: "UNamur", long: "Université de Namur"),
 ))
 
-There are many Belgian university, like @kuleuven and @ulb. When repeating their names, they won't show as a long version: @kuleuven, @ulb. But we can still force them to be long using the `gloss` function: #gloss("kuleuven", long: true). We can also force them to be short: #gloss("kuleuven", short: true). Finally, we can make them plural using the `suffix` parameter: #gloss("kuleuven", suffix: "s") or using the additional `supplement` onto the `ref`: @kuleuven[s].
+There are many Belgian universities, like @kuleuven and @ulb. When repeating their names, they won't show as a long version: @kuleuven, @ulb. But we can still force them to be long using the `gloss` function: #gloss("kuleuven", long: true). We can also force them to be short: #gloss("kuleuven", short: true). Finally, we can make them plural using the `suffix` parameter: #gloss("kuleuven", suffix: "s") or using the additional `supplement` onto the `ref`: @kuleuven[s].
 
 #pagebreak()
 #set page(numbering: "1")
