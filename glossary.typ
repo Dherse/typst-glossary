@@ -44,11 +44,15 @@
     let elems = ();
     for entry in entries.sorted(key: (x) => x.short) {
         elems.push[
-            #heading(smallcaps(entry.short), level: 99)
+            #heading([ #entry.long (#smallcaps(entry.short))], level: 99)
             #label(entry.key)
         ]
+        // elems.push[
+        //     #emph(entry.desc)
+            
+        // ]
         elems.push[
-            #emph(entry.long)
+            #emph(entry.desc)
             #box(width: 1fr, repeat[.])
             #locate(loc => {
                 glossary_entries
@@ -63,12 +67,12 @@
     }
 
     table(
-        columns: (auto, 1fr),
+        columns: (2fr, 5fr),
         inset: 5pt,
         stroke: none,
         fill: (_, row) => {
             if calc.odd(row) {
-                luma(240)
+                luma(255)
             } else {
                 white
             }
